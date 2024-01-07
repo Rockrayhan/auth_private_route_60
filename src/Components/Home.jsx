@@ -9,7 +9,7 @@ const Home = () => {
 
 
             <div className='bg-red-400'>
-                <h1 className='text-teal-700'> Kire {user} </h1>
+                <h1 className='text-teal-700'> Kire </h1>
             </div>
 
             <h1 className="text-3xl font-bold underline">

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../providers/AuthProviders';
 import { Result } from 'postcss';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     const {user, createUser} = useContext(AuthContext);
@@ -30,7 +31,7 @@ const Register = () => {
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Register now! mr.{user} </h1>
+                    <h1 className="text-5xl font-bold">Register now! </h1>
                 </div>
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form className="card-body" onSubmit={handleRegister}>
@@ -62,6 +63,7 @@ const Register = () => {
                         </div>
                     </form>
                 </div>
+                <Link to='login'> Already Registered ? Please Login </Link>
             </div>
         </div>
     </div>

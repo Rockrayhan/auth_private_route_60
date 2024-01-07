@@ -1,6 +1,7 @@
 import React from 'react';
 import { useContext } from 'react';
 import { AuthContext } from '../providers/AuthProviders';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -51,6 +52,8 @@ const Login = () => {
                                 <button className="btn btn-primary">Login</button>
                             </div>
                         </form>
+
+                        <Link to='register'> New user ? Please Register </Link>
                     </div>
                 </div>
             </div>
